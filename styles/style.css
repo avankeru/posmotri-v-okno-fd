@@ -45,13 +45,7 @@ ol {
   position: relative;
 }
 
-.preloader {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
+
 
 /* Стили наведений  */
 
@@ -208,9 +202,6 @@ ol {
   max-height: 456px;
 }
 
-.result__video-container {
-  /* margin-bottom: 16px; */
-}
 
 .result__video {
   width: 100%;
