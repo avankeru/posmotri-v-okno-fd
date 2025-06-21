@@ -47,7 +47,6 @@ ol {
   margin-bottom: 16px;
 }
 
-
 /* Стили наведений  */
 
 .search-form__label-text:hover {
@@ -58,7 +57,7 @@ ol {
   text-decoration: underline;
 }
 
-.content__card-link_current .content__video-card{
+.content__card-link_current .content__video-card {
   background-color: #545050;
 }
 
@@ -200,8 +199,7 @@ ol {
   margin: 133px 30px;
   align-items: end;
   grid-auto-flow: column;
-  grid-template-areas:
-    "result details";
+  grid-template-areas: "result details";
   width: 100%;
   gap: 30px;
 }
@@ -210,7 +208,6 @@ ol {
   grid-area: result;
   width: 100%;
 }
-
 
 .result__video {
   width: 100%;
