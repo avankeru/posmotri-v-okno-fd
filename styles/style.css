@@ -43,6 +43,7 @@ ol {
 .result__video-container,
 .content__list-container {
   position: relative;
+  margin-bottom: 16px;
 }
 
 
@@ -54,6 +55,10 @@ ol {
 
 .button:hover {
   text-decoration: underline;
+}
+
+.content__card-link_current .content__video-card{
+  background-color: #545050;
 }
 
 .content__card-link:hover {
@@ -105,15 +110,17 @@ ol {
   display: flex;
   gap: 15px;
   width: fit-content;
+  margin-bottom: 5px;
 }
 
 .search-form__label {
   display: flex;
+  align-items: center;
 }
 
 .search-form__textfield {
   background-color: transparent;
-  font-family: "Fira Sans Condensed";
+  font-family: "Fira Sans Condensed", serif;
   font-size: 18px;
   line-height: 100%;
   border: none;
@@ -132,7 +139,7 @@ ol {
 .more-button {
   padding: 6px 142px;
   font-size: 18px;
-  font-family: "Fira Sans Condensed";
+  font-family: "Fira Sans Condensed", serif;
   font-weight: 700;
   line-height: 100%;
   background-color: transparent;
@@ -144,10 +151,11 @@ ol {
   color: #fff;
   line-height: 100%;
   font-weight: 700;
-  font-family: "Fira Sans Condensed";
+  font-family: "Fira Sans Condensed", serif;
   padding: 6px 73.5px;
   border: 1px solid #fff;
   font-size: 18px;
+  margin-bottom: 4px;
 }
 
 .search-form__city {
@@ -156,13 +164,14 @@ ol {
 }
 
 .search-form__fieldset-title {
-  font-family: "Fira Sans Condensed";
+  font-family: "Fira Sans Condensed", serif;
   font-weight: 400;
-  line-height: 100%;
+  font-size: 18px;
+  margin-bottom: 5px;
 }
 
 .content__video-card-title {
-  font-family: "Oswald";
+  font-family: "Oswald", serif;
   font-size: 30px;
   line-height: 100%;
   text-transform: uppercase;
@@ -170,6 +179,7 @@ ol {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  max-width: 192px;
 }
 
 .content__video-card-description {
@@ -178,7 +188,7 @@ ol {
   -webkit-box-orient: vertical;
   overflow: hidden; /* Скрывает излишний текст */
   text-overflow: ellipsis; /* Заменяет скрытый текст на "…" */
-  font-family: "Fira Sans Condensed";
+  font-family: "Fira Sans Condensed", serif;
   line-height: 16.2px;
 }
 
@@ -189,16 +199,15 @@ ol {
   margin: 133px 30px;
   align-items: end;
   grid-auto-flow: column;
-  grid-template-areas: "result details";
+  grid-template-areas:
+    "result details";
   width: 100%;
   gap: 30px;
-  max-height: 534px;
 }
 
 .result {
   grid-area: result;
   width: 100%;
-  max-height: 456px;
 }
 
 
@@ -206,6 +215,7 @@ ol {
   width: 100%;
   height: 386px;
   object-fit: cover;
+  object-position: center;
 }
 
 .search-form {
@@ -219,12 +229,11 @@ ol {
 .content__details {
   grid-area: details;
   width: 100%;
-  max-height: 534px;
 }
 
 .title {
   margin-bottom: 26px;
-  font-family: Oswald;
+  font-family: "Oswald", serif;
   font-size: 75px;
   line-height: 94%;
   text-transform: uppercase;
@@ -236,7 +245,8 @@ ol {
 
 .content__list-container {
   overflow-y: auto;
-  max-height: 298px;
+  height: 298px;
+  width: 399px;
 }
 
 .content__list {
@@ -247,6 +257,11 @@ ol {
 }
 
 /* Кастомный скроллбар */
+
+.custom-scrollbar {
+  margin: 0;
+}
+
 .custom-scrollbar::-webkit-scrollbar {
   width: 4px;
 }
