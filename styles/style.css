@@ -159,6 +159,7 @@ ol {
 }
 
 .search-form__city {
+  text-decoration: none;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
 }
@@ -307,6 +308,7 @@ ol {
 .content__video-card-description-container {
   flex-grow: 1; /* Занимает всё оставшееся пространство */
   color: #fff;
+  max-width: 196px;
 }
 
 .content__card-link {
