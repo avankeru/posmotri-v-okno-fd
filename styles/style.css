@@ -201,7 +201,8 @@ ol {
   margin: 133px 30px;
   align-items: end;
   grid-auto-flow: column;
-  grid-template-areas: "result details";
+  grid-template-areas:
+    "result details";
   width: 100%;
   gap: 30px;
 }
