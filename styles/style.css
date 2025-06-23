@@ -44,13 +44,15 @@ ol {
 .result__video-container,
 .content__list-container {
   position: relative;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
+  width: 711px;
 }
 
 /* Стили наведений  */
 
 .search-form__label:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -155,7 +157,6 @@ ol {
   padding: 6px 73.5px;
   border: 1px solid #fff;
   font-size: 18px;
-  margin-bottom: 4px;
 }
 .search-form__city:hover {
   text-decoration: none;
@@ -175,9 +176,9 @@ ol {
 .content__video-card-title {
   font-family: "Oswald", serif;
   font-size: 30px;
-  line-height: 100%;
+  line-height: 124%;
   text-transform: uppercase;
-  margin-bottom: 6px;
+  margin-bottom: 2px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -201,10 +202,9 @@ ol {
   margin: 133px 30px;
   align-items: end;
   grid-auto-flow: column;
-  grid-template-areas:
-    "result details";
+  grid-template-areas: "result details";
   width: 100%;
-  gap: 30px;
+  gap: 27px;
 }
 
 .result {
@@ -233,7 +233,7 @@ ol {
 }
 
 .title {
-  margin-bottom: 26px;
+  margin-bottom: 20px;
   font-family: "Oswald", serif;
   font-size: 75px;
   line-height: 94%;
